@@ -15,6 +15,10 @@ run/main_scene="res://screens/Main.tscn"
 config/features=PackedStringArray("4.4")
 config/icon="res://icon.png"
 
+[audio]
+
+driver/enable_input=true
+
 [autoload]
 
 SpriteTuber="*res://scripts/SpriteTuber.gd"
@@ -26,6 +30,15 @@ window/size/viewport_height=720
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/vsync/vsync_mode=false
+window/size/width=960
+window/size/height=720
+window/size/test_width=1280
+window/size/test_height=720
+window/vsync/use_vsync=false
+
+[dotnet]
+
+project/assembly_name="spritetuber"
 
 [gui]
 
@@ -42,3 +55,5 @@ environment/defaults/default_environment="res://default_env.tres"
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 quality/dynamic_fonts/use_oversampling=false
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
