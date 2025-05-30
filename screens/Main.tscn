@@ -7,7 +7,9 @@
 [node name="MainViewElement" type="SubViewportContainer" parent="."]
 
 [node name="MainView" type="SubViewport" parent="MainViewElement"]
+handle_input_locally = false
 size = Vector2i(960, 720)
+render_target_update_mode = 4
 
 [node name="Camera3D" type="Camera2D" parent="MainViewElement/MainView"]
 
@@ -18,6 +20,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="UILayer/UI"]
 layout_mode = 0

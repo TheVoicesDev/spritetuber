@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://qrjbo6u7hswy"]
+
+[node name="KeybindTemplate" type="HBoxContainer"]
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "Keybind Name"

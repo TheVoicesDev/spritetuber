@@ -1,15 +1,18 @@
 extends Node
 
-var _bg_color : Color = Color.GREEN
+var bg_color : Color:
+	get:
+		return _bg_color
+	set(val):
+		_bg_color = val
+		bg_color_changed.emit()
 
 signal bg_color_changed
 
+var _bg_color : Color = Color.GREEN
+
 func _ready():
-	get_tree().root.connect("size_changed", Callable(self, "_on_window_size_changed"))
-	
-	
 	pass # Replace with function body.
 
-
-func _on_window_size_changed() -> void:
-	pass
+func save_settings() -> void:
+	

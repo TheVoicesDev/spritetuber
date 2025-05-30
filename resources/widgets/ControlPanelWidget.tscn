@@ -1,5 +1,13 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=3 uid="uid://bfiq2u8y4uers"]
+
+[ext_resource type="PackedScene" uid="uid://w53dvb6dotte" path="res://resources/ui/SimpleControlPanel.tscn" id="1_1s1x2"]
 
 [node name="ControlPanelWidget" type="Control"]
+layout_mode = 3
+anchor_left = 0.5
 anchor_right = 1.0
 anchor_bottom = 1.0
+
+[node name="SimpleControlPanel" parent="." instance=ExtResource("1_1s1x2")]
+layout_mode = 0
+anchors_preset = 0
