@@ -1,9 +1,9 @@
 class_name BGColorPresetButton extends OptionButton
 
-export var default_options : Dictionary = {
-	"Green": Color.green,
-	"Blue": Color.blue,
-	"Magenta": Color.magenta
+@export var default_options : Dictionary[String, Color] = {
+	"Green": Color.GREEN,
+	"Blue": Color.BLUE,
+	"Magenta": Color.MAGENTA
 }
 
 func _ready():

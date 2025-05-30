@@ -2,38 +2,68 @@
 
 [ext_resource path="res://scripts/ui/BGColorPresetButton.gd" type="Script" id=1]
 
-[node name="SimpleControlPanel" type="VBoxContainer"]
+[node name="SimpleControlPanel" type="TabContainer"]
+offset_top = 24.0
+offset_right = 960.0
+offset_bottom = 60.0
+
+[node name="General" type="VBoxContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 32.0
+offset_right = -4.0
+offset_bottom = -4.0
 
-[node name="BackgroundColor" type="HBoxContainer" parent="."]
-margin_right = 960.0
-margin_bottom = 20.0
+[node name="BackgroundColor" type="HBoxContainer" parent="General"]
+offset_right = 952.0
+offset_bottom = 20.0
 
-[node name="Label" type="Label" parent="BackgroundColor"]
-margin_top = 3.0
-margin_right = 414.0
-margin_bottom = 17.0
+[node name="Title" type="Label" parent="General/BackgroundColor"]
+offset_top = 3.0
+offset_right = 492.0
+offset_bottom = 17.0
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
 text = "Background Color"
 
-[node name="Label2" type="Label" parent="BackgroundColor"]
-margin_left = 418.0
-margin_top = 3.0
-margin_right = 470.0
-margin_bottom = 17.0
+[node name="PresetLabel" type="Label" parent="General/BackgroundColor"]
+offset_left = 496.0
+offset_top = 3.0
+offset_right = 548.0
+offset_bottom = 17.0
 text = "Presets:"
 
-[node name="OptionButton" type="OptionButton" parent="BackgroundColor"]
-margin_left = 474.0
-margin_right = 542.0
-margin_bottom = 20.0
+[node name="PresetSelection" type="OptionButton" parent="General/BackgroundColor"]
+offset_left = 552.0
+offset_right = 620.0
+offset_bottom = 20.0
 text = "Green"
 script = ExtResource( 1 )
 
-[node name="ColorPickerButton" type="ColorPickerButton" parent="BackgroundColor"]
-margin_left = 546.0
-margin_right = 960.0
-margin_bottom = 20.0
+[node name="ColorPickerButton" type="ColorPickerButton" parent="General/BackgroundColor"]
+offset_left = 624.0
+offset_right = 952.0
+offset_bottom = 20.0
 size_flags_horizontal = 3
 edit_alpha = false
+
+[node name="Filtering" type="HBoxContainer" parent="General"]
+offset_top = 24.0
+offset_right = 952.0
+offset_bottom = 24.0
+
+[node name="Performance" type="VBoxContainer" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Costumes" type="VBoxContainer" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Keybinds" type="VBoxContainer" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
