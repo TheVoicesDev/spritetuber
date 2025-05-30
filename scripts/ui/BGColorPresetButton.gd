@@ -9,9 +9,3 @@ export var default_options : Dictionary = {
 func _ready():
 	for option in default_options:
 		add_item(option)
-		#add_icon_item()
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
