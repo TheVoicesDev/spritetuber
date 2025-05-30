@@ -8,11 +8,25 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "BGColorPresetButton",
+"language": "GDScript",
+"path": "res://scripts/ui/BGColorPresetButton.gd"
+} ]
+_global_script_class_icons={
+"BGColorPresetButton": ""
+}
+
 [application]
 
 config/name="spritetuber"
 run/main_scene="res://screens/Main.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+SpriteTuber="*res://scripts/SpriteTuber.gd"
 
 [display]
 
@@ -38,3 +52,4 @@ quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
 environment/default_environment="res://default_env.tres"
+quality/dynamic_fonts/use_oversampling=false

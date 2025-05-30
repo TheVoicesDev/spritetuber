@@ -4,6 +4,13 @@
 
 [node name="Main" type="Node"]
 
+[node name="Viewport" type="ViewportContainer" parent="."]
+
+[node name="Viewport" type="Viewport" parent="Viewport"]
+size = Vector2( 960, 720 )
+own_world = true
+usage = 0
+
 [node name="UILayer" type="CanvasLayer" parent="."]
 
 [node name="UI" type="Control" parent="UILayer"]
